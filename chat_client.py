@@ -17,7 +17,7 @@ def receive_messages():
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Connect to the server
-#client_socket.connect(('127.0.0.1', 5555))
+#client_socket.connect(('127.0.0.1', 5555)) //Public IP & Port
 client_socket.connect(('192.168.1.7', 5555))
 
 # Start a thread to receive messages from the server
