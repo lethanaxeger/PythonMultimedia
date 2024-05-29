@@ -17,7 +17,7 @@ def handle_client(client_socket, client_address):
 
     print(f"Disconnected: {client_address}")
     client_socket.close()
-
+    
 # Function to broadcast messages to all clients
 def broadcast(message):
     for client in clients:
